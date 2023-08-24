@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"  href="./CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Invoice Generator</title>
+    <!-- <style type="text/css" media="print">
+        *{
+            -webkit-print-color-adjust: exact !important; /*Chrome, Safari */
+        }
+    </style> -->
+</head>
+<body>
+<div class="main">
+    <div id="form1" class="form">
+        <img src="img/logo.png" class="img">
+        <table>
+          <form>
+            <tr>
+                <td class="p"><p>Customer's Name</p></td>
+                <td><input   type="text" placeholder="abc" size="50"></td>
+            </tr>
+            <tr>
+                <td class="p"><p>Item </p></td>
+                <td><input   type="text" placeholder="eg: necklace"></td>
+            </tr>
+            <tr>
+                <td class="p"><p>वज़न</p></td>
+                <td><input   type="number"></td>
+            </tr>
+            <tr>
+                <td class="p"><p>छीजत</p></td>
+                <td><input   type="number"></td>
+            </tr>
+            <tr>
+                <td class="p"><p>ताछ</p></td>
+                <td><input   type="number"></td>
+            </tr>
+            <tr>
+                <td class="p"><p>वापस </p></td>
+                <td><input   type="number"></td>
+            </tr>
+            <tr>
+                <td class="p"><p>Item Description</p></td>
+                <td><input   type="text" id="desc"></td>
+            </tr>
+            <tr>
+                <td class="p"><p>Quantity</p></td>
+                <td><input   type="number" id="qnt"></td>
+            </tr>
+            <tr>
+                <td class="p"><p>Price</p></td>
+                <td><input   type="number" id="price"></td>
+            </tr>
+            <tr>
+                <td><p>jama</p></td>
+                <td><input  value="0" type="number"  id="jama"></td>
+            </tr>
+            <tr>
+                <td><p>Baki</p></td>
+                <td><input value="0"  type="number" id="baki"></td>
+            </tr>
+        </table><br>
+        <button class="addBtn">Add Item</button>
+        <br>
+    </div>
+    <br>
+
+    <div id="table1" class="form">
+        <table id="table">
+            <tr>
+                <th>Item_Des</th>
+                <th>Qnt.</th>
+                <th>Price</th>
+                <th>Amount</th>
+            </tr>
+        </table>
+        <button onclick="CN()" class="submitBtn"><a href="HTML/index.html">Generate Invoice</a></button>
+    </div>
+</div>
+    <script src="JS/index.js"></script>
+</body>
+</html>

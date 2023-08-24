@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Invoice</title>
+    <link rel="stylesheet" href="../CSS/invoice.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="main">
+    
+        <img src="../img/bill_logo.png" class="header">
+    
+    <div class="container">
+        <div>
+            <div class="Customer"><b>कस्टमर   - </b><span id="CN" class="data"></span></div>
+            <div class="date"><b>दिनांक  : </b><span id="CN" class="data"></span></div>
+            <div id="Product"><b>आइटम   - </b><span id="item" class="data"></span> </div>
+        </div>
+
+        <hr>
+        <br>
+        <div class="inside">
+            <div id="hindi">
+                <table border="none">
+                    <tr>
+                        <td>वज़न</td><td id="weight" class="data"></td>
+                    </tr>
+                    <tr>
+                    <td>नग वजन<td id="NW"></td></td>
+                </tr>
+                <tr>
+                    <td>छीजत<td id="waste" class="data"></td></td>
+                </tr>
+                <tr>
+                    <td>ताछ<td class="data"></td></td>
+                </tr>
+                <tr>
+                    <td>वापस<td id="FW" class="data"></td></td>
+                </tr>
+                </table>
+            </div>
+            <hr>
+            <div id="table1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>Dsc</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                    </tr>
+                    
+                </table>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+<button onclick="window.print()" id="btn">Print</button>
+    <script src="../JS/invoice.js"></script>
+</body>
+</html>
